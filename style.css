@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef;
+    /* background-color: red; */
+    color: #333;
+}
+.navbar, .navbar-secondary {
+    display: flex;
+    align-items: center;
+    background-color: #28a745;
+    padding: 10px;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+.navbar {
+    position: relative; /* Needed for positioning the logo */
+}
+.navbar::before {
+    content: "";
+    display: inline-block;
+    width: 30px; /* Adjust the size of the logo */
+    height: 30px;
+    background-image: url('https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg');
+    background-size: contain; /* Scale the logo to fit the container */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px; /* Space between the logo and title */
+}
+.navbar h1 {
+    flex: 1;
+    color: white;
+    text-align: left; /* Aligns title to the left */
+    margin: 0;
+}
+.navbar a, .navbar-secondary a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+.navbar a:hover, .navbar-secondary a:hover {
+    background-color: #1d2124;
+    color: white;
+}
+.slider {
+    position: relative;
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    position: relative;
+    min-width: 100%;
+}
+.slides img {
+    width: 100%;
+    vertical-align: middle;
+}
+.slider .prev, .slider .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+.slider .prev {
+    left: 10px;
+}
+.slider .next {
+    right: 10px;
+}
+.overlay-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.content-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px;
+    flex-wrap: nowrap;
+}
+.content-item {
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1;
+    text-align: center;
+}
+.content-item img {
+    width: 100%;
+    height: auto;
+}
+.footer {
+    background-color: #212529;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer a {
+    color: #28a745;
+    text-decoration: none;
+}
+.return-top {
+    text-align: right;
+}
