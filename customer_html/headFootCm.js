@@ -42,7 +42,7 @@
 
         function attachNavEventListeners() {
                 let isGitHub = window.location.hostname.includes("github.io");
-                let baseUrl = isGitHub ? window.location.origin + "/project/" : window.location.origin + "/";
+                let baseUrl = isGitHub ? window.location.origin + "/php/" : window.location.origin + "/";
                 let links= document.querySelectorAll('a');
                 if(links.length>0){
                     console.log(`there is ${links.length} number of links found`);
