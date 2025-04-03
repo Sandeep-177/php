@@ -12,6 +12,7 @@
                 .then(response => response.text())
                 // .then(data => {document.getElementById(elementId).innerHTML = data;})
                 .then(data => {
+                    console.log(`the header,footer new url are ${newUrl}`);
                         let element = document.getElementById(elementId);
                     if (element) {
                         element.innerHTML = data;
@@ -23,9 +24,9 @@
                         console.log("✅ All dynamic content loaded!");
                         attachNavEventListeners(); // ✅ Call function after all files load
                     } 
-                    else {
-                        console.error(`Element with ID '${elementId}' not found in the DOM!`);
-                    }
+                    // else {
+                    //     console.error(`Element with ID '${elementId}' not found in the DOM!`);
+                    // }
                 })
                 .catch(error => console.error(`Error loading '${url}':`, error));
             }
