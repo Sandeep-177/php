@@ -1,0 +1,39 @@
+#parent1{
+    margin: 20px 85px;
+}
+h3{
+    margin: 20px 0;
+}
+.pDiv{
+    margin: 20px 0 100px 0;
+}
+.childDiv form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#formP{
+    margin-bottom: 40px;
+}
+label{
+    font-weight: bold;
+}
+input{
+    border:2px solid rgb(227, 233, 227);
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.chilD{
+    width: 50%;
+    margin: 10px 0;
+}
+button {
+    /* display: inline; */
+    background: #007BFF;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    width: 200px;    
+}

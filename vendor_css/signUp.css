@@ -1,0 +1,58 @@
+/* Sign up */
+#sect{
+    display: flex;
+    padding: 50px;
+    gap: 40px;
+    justify-content: space-evenly;
+}
+.forms{
+    background-color: rgb(19, 18, 82);
+    padding: 5%;
+    width: 40%;
+}
+.forms2{
+    background-color: white;
+}
+#ch-form{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 30px;
+}
+#ch-form h1{
+    text-align: center;
+}
+#ch-form input{
+    margin: 20px 0 20px;
+    padding: 10px;
+    gap: 20px;
+}
+select{
+    margin: 20px 0 20px;
+    padding: 10px;
+}
+#ch-form button{
+    background: #007BFF;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+.lgin{
+    display: flex;
+}
+.btm{
+    padding-top: 20px;
+}
+.lgin a{
+    margin-left: 20px;
+    text-decoration:none;
+    color: #007BFF;
+}
+#box{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    width: 500px;
+    height: fit-content;
+}

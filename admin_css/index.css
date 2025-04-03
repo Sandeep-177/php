@@ -1,0 +1,55 @@
+/* first heading and paragraph */
+h3,.pDiv{
+    margin: 20px 85px;
+}
+.firstP{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 85px;
+}
+
+/* four boxes */
+.fourDiv{
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fourChild{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 10px;
+    border: 2px solid black;
+    height: 200px;
+    width: 300px;
+    padding: 30px;
+}
+
+
+#frdv1{
+    background-color: rgb(190, 188, 29);
+}
+#frdv2{
+    background-color: rgb(253, 113, 113);
+}
+#frdv3{
+    background-color: rgb(47, 170, 143);
+}
+#frdv4{
+    background-color: rgb(189, 84, 189);
+}
+
+/* table */
+.tble{
+    margin: 20px 85px;
+    /* background-color: pink; */
+}
+table{
+    width: 100%;
+    text-align: left;
+}
+th,td{
+    padding: 10px 0 10px 10px;
+}

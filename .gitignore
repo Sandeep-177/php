@@ -1,0 +1,25 @@
+# Node modules (don't push these)
+# Ignore node_modules folder
+node_modules/
+
+# Tailwind generated CSS (can be rebuilt)
+# linktailwind.css
+
+# Ignore generated Tailwind CSS file (if you want to generate it again on deployment)
+tailwindcss.css
+
+# System files (optional)
+# Ignore system files (optional)
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+
+
+# Ignore the package-lock.json (optional, but recommended for open-source projects)
+# package-lock.json
+
+
+
+

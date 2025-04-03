@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="/vendor_css/common.css">
+    <link rel="stylesheet" href="/vendor_css/signUp.css">
+</head>
+
+<body>
+    <!-- Sign up -->
+    <section id="sect">
+        <div class="forms">
+            <div class="forms2">
+                <form id="ch-form">
+                    <h1>SIGN UP</h1>
+                    <input type="text" placeholder="Shop Name">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <input type="text" placeholder="Mobile Number">
+                    <textarea name="adres" id="adres1" rows="5"></textarea>
+                    <select name="sel" id="sel1">
+                        <option value="ak" selected disabled>Select Category</option>
+                        <option value="bk">dfds</option>
+                        <option value="ck">fds</option>
+                    </select>
+                    <select name="sell" id="sel2">
+                        <option value="dk" selected disabled>Select Location</option>
+                        <option value="ek">dfds</option>
+                        <option value="fk">fds</option>
+                    </select>
+                    <select name="selll" id="sel3">
+                        <option value="gk" selected disabled>Select Plan</option>
+                        <option value="hk">dfds</option>
+                        <option value="jk">fds</option>
+                    </select>
+                    <button id="vbtn" type="submit">SIGN UP</button>
+                    <Span class="lgin">
+                        <p class="btm">Already have an account?</p>
+                        <a href="logIn.html" class="btm">LOG IN HERE</a>
+                    </Span>
+                </form>
+            </div>
+        </div>
+        <div id="box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, explicabo nesciunt officiis consequuntur
+            deleniti provident perspiciatis impedit dolorum maxime blanditiis laborum nulla non, libero nihil a
+            architecto dolores praesentium accusamus.
+        </div>
+    </section>
+    <script>
+        document.getElementById('vbtn').addEventListener('click',(event)=>{
+            event.preventDefault();
+            window.location.href="../vendor_html/venDashboard.html";
+        });
+    </script>
+
+</body>
+
+</html>

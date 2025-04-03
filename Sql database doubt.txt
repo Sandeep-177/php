@@ -1,1 +1,0 @@
-does sql database table raw are associative arrays?

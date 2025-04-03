@@ -1,0 +1,138 @@
+#contact1{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+#yellowb{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    display: flex;
+    gap: 20px;
+    padding: 3%;
+    flex-wrap: wrap;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: #f0f181;
+    width: 300px;
+    height: fit-content;
+    border-radius: 5px;
+}
+#yellowb p{
+    padding-top: 10px;
+    margin: 0;
+    font-size: 15px;
+}
+#infield{
+    width: 800px;
+    height: fit-content;
+    background-color: white;
+    margin: 10px 10px 10px 30%;
+    border-radius: 5px;
+}
+#infield h1{
+    text-align: center;
+    margin-top: 40px;
+}
+#form{
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+#form input,textarea{
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid black;
+}
+input,textarea:focus{
+    outline: none;
+}
+.logbtn {
+    background: #fff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+/* happy clients */
+#sec2{
+    background-color: #e8eb5c;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+#sec2div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 100%;
+
+}
+.sec_2 {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    gap: 10px;
+    width: 100%;
+}
+
+#sec2 #sec2div img {
+    border-radius: 50%;
+    padding: 10px;
+    height: 150px;
+    width: 150px;
+
+}
+
+/* frequently asked questions */
+#freq h2{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 800;
+}
+#freq{
+    padding: 30px;
+    background-color: #e8eb5c;
+}
+#freqDiv{
+    margin: 20px 40px;
+}
+#freq h1{
+    margin-bottom: 10px;
+    font-size: 2em;
+    color: #007BFF;
+}
+#freq summary{
+    display: inline-block;
+    list-style: none;
+    font-size: large;
+    width: 100%;
+    padding: 30px;
+}
+#freq:hover{
+background-color: #e4d54e;
+}
+#freq summary:hover{
+    background-color: #f0f181;
+}
+#freq p{
+    margin: 0 30px;
+    line-height: 1.6;
+    text-align: justify;
+    width: 100%;
+}
+#freq ul li{
+    border-bottom: 1px solid black;
+    list-style: none;
+    margin-bottom: 20px;
+    
+}
+.active{
+    background-color:#f0f181;
+}
+

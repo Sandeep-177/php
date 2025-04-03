@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../admin_css/commonAdmincss.css">
+    <link rel="stylesheet" href="../admin_css/adminLogin.css">
+</head>
+<body>
+    <!-- Header -->
+
+    <!-- content -->
+    <div class="parent" id="parent1">
+        <h3 style="color: rgb(250, 101, 101);">PLEASE LOGIN TO ENTER</h3>
+        <div class="pDiv" style="height: 3px; width:auto; background-color: rgb(250, 101, 101);"></div>
+
+     <!-- table database div -->
+     <div class="childDiv">
+            <form>
+                <P id="formP">Login with <b>SHS Admin Account:</b></P>
+                <label for="Ename">Enter UserName:</label>
+                <input type="text" name="Ename">
+                <label for="Epass">Enter Password:</label>
+                <input type="password" name="Epass">
+                <div class="chilD" style="height: 1px; background-color: rgb(227,233,227);"></div>
+                <button id="vlbtn">Login</button>
+            </form>
+        </div>
+     </div>
+
+    <!-- Footer -->
+    <script>
+        document.getElementById('vlbtn').addEventListener('click',function(){
+            event.preventDefault();
+            window.location.href="index.html";
+        });
+    </script>
+</body>
+</html>

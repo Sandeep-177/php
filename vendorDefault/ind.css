@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3, p {
+    margin: 0 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header .logo h1 {
+    margin: 0 auto 0 0;
+    font-size: 30px;
+}
+header .logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-size: 16px;
+}
+button{
+    width: 100px;
+    height: 30px;
+    background-color: #007BFF;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero .cta-btn {
+    background-color: #f8a900;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+/* account creation step div */
+#acdivP{
+    background-color: palevioletred;
+}
+#acdivP h2{
+    text-align: center;
+    padding: 10px;
+}
+#acdiv{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 300px 300px 300px 300px 300px;
+}
+.im img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.ven{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fend{
+    justify-content: flex-end;
+}
+.fstrt{
+    justify-content: flex-start;
+}
+/* Section Styles */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}

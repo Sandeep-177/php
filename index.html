@@ -1,17 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'"> -->
+    <title>Automatic Home Service</title>
+    <link rel="stylesheet" href="./customer_css/styles.css">
+    <link rel="stylesheet" href="linktailwind.css">
 </head>
+
 <body>
-    <div class="testing">
-        <p>let's be</p>
-        <p>let's go</p>
-        <?php 
-    echo "hell yeah";
-    ?>
-    </div>
+    <!-- Header -->
+    <div id="head"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <p id="pyellow">
+            HOW CAN WE
+        </p>
+        <p id="pyellow2">
+
+        </p>
+        <div id="heroc">
+            <p id="abou">About Us</p>
+            <p>
+                We provide reliable home services, including AC repairing, wall painting, plumbing, and more. Our
+                skilled professionals ensure quality, timely solutions tailored to your needs, making your home
+                maintenance hassle-free and convenient.
+            </p>
+            <a class="lernm" href="./customer_html/aboutUs.html">LEARN MORE</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Popular Services</h2>
+        <div class="service-cards wraps wid">
+            <div id="cardser" class="card"
+                style=" background-image: url('./images/cleaning.jpeg'); background-size: cover;">
+                <div id="clean" class="tryi">
+                    <h3>House Cleaning</h3>
+                    <p>Professional home cleaning for spotless spaces.</p>
+                    <!-- <button>Book Now</button> -->
+                </div>
+            </div>
+            <div class="card" style=" background-image: url('./images/electrician.jpg'); background-size: cover;">
+                <div id="electric" class="tryi">
+                    <h3>Electrician Services</h3>
+                    <p>Expert electricians for repairs and installations.</p>
+                    <!-- <button>Book Now</button> -->
+                </div>
+            </div>
+            <div class="card" style=" background-image: url('./images/plumbing.jpg'); background-size: cover;">
+                <div id="plumb" class="tryi">
+                    <h3>Plumbing Services</h3>
+                    <p>Get plumbing issues fixed quickly and efficiently.</p>
+                    <!-- <button>Book Now</button> -->
+                </div>
+            </div>
+            <div class="card" style=" background-image: url('./images/smp.jpg'); background-size: cover;">
+                <div id="paint" class="tryi">
+                    <h3>House Painting</h3>
+                    <p>Upgrade your home with smart automation.</p>
+                    <!-- <button>Book Now</button> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!-- Who we are -->
+    <div id="who"></div>
+
+    <!-- Footer -->
+    <div id="foot"></div>
+
+    <script src="./customer_html/headFootCm.js"></script>  
+    <script src="./customer_html/category.js" defer></script>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(() => {
+    const images = document.querySelectorAll(".svgLnk");
+    console.log(`svgLnk elements found: ${images.length}`);
+
+    let isGitHub = window.location.hostname.includes("github.io");
+
+    images.forEach(img => {
+        let src = img.getAttribute("src");
+
+        if (isGitHub && !src.startsWith("/project")) {
+            img.src = "/project" + src; // Fix path only for GitHub Pages
+        }
+
+        console.log(`Updated src: ${img.src}`);
+    });
+
+    console.log("SVG images loaded correctly");
+});
+}, 5000);
+    </script> -->
+    <script src="./customer_html/footImgLink.js" defer></script>
 </body>
+
 </html>

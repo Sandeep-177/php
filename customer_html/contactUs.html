@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../customer_css/styles.css">
+    <link rel="stylesheet" href="../customer_css/contactUs.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="head"></div>
+
+    <!-- Contact Us -->
+    <section id="contact1">
+
+        <div id="infield">
+            <h1>CONTACT US</h1>
+            <form id="form">
+                <input type="text" placeholder="Enter your name">
+                <input type="email" placeholder="Enter your email">
+                <textarea name="heloo" id="area1" placeholder="Enter your message" rows="6"></textarea>
+                <button type="submit" class="logbtn">SUBMIT</button>
+            </form>
+            <div id="yellowb">
+                <div class="imag">
+                    <h4>CALL US</h4>
+                    <p>+91 8126787879</p>
+                </div>
+                <div class="imag">
+                    <h4>LOCATION</h4>
+                    <p>Bhubaneswar,Odisha,India</p>
+                </div>
+                <div class="imag">
+                    <h4>EMAIL US</h4>
+                    <p>homeservice@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Happy clients -->
+    <section id="sec2">
+        <div id="sec2div">
+            <div class="sec_2"><img src="../images/StockSnap_OLJZKBI4DD.jpg" alt="no image">Fantastic service! My AC was
+                fixed quickly and efficiently. Highly recommend!</div>
+            <div class="sec_2"><img src="../images/StockSnap_LBCFK9ZXKD.jpg" alt="no image">Professional and affordable
+                plumbing work. Very satisfied with the results!</div>
+            <div class="sec_2"><img src="../images/StockSnap_MA3I9K7GPD.jpg" alt="no image">The painting service
+                transformed my home. The team was polite and skilled!</div>
+            <div class="sec_2"><img src="../images/StockSnap_NEJC2MVDAZ.jpg" alt="no image">The plumbing service is
+                good, it's been three months and there is not any problem in my sink again</div>
+        </div>
+    </section>
+
+    <!-- Frquently asked questions -->
+    <section id="freq">
+        <h2>Frequently Asked questions</h2>
+        <div id="freqDiv">
+            <ul>
+                <li>
+                    <details>
+                        <summary class="sumr">Q: How long does it take to respond to a query?</summary>
+                        <p>We typically respond within 24 hours of receiving your message.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary id="smry2">Q: Can I book a service directly through this form?</summary>
+                        <p>Yes, you can mention the service you need in the message section, and we'll get back to you
+                            with the details.</p>
+                    </details>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <div id="foot"></div>
+
+    <script src="headFootCm.js"></script>
+    <script>
+        let c = document.querySelectorAll("#freqDiv summary");
+        c.forEach(element => {
+            element.addEventListener('click', (event) => {
+                event.preventDefault();
+                element.classList.toggle("active");
+
+
+                let details = element.parentElement;
+                let allDetails = document.querySelectorAll('details');
+                allDetails.forEach(detail => {
+                    if (detail !== details) {
+                        detail.removeAttribute('open'); // Close other open <details> elements
+                    }
+                });
+
+                if (details.hasAttribute("open")) {
+                    details.removeAttribute("open"); // Close if it's open
+                } else {
+                    details.setAttribute("open", ""); // Open if it's closed
+                }
+
+            });
+
+        });
+
+    </script>
+    <script src="footImgLink.js" defer></script>
+
+</body>
+
+</html>

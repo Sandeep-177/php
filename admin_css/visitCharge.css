@@ -1,0 +1,38 @@
+/* Add new Location */
+.divFist{
+    border: 2px solid rgb(227, 233, 227);
+    margin: 20px 85px;
+    display: flex;
+    flex-direction: column;
+}
+.fist{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+#orders{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+#input1,#input3,#input4,#input5{
+    border: 2px solid rgb(227, 233, 227);
+    margin: 10px 0 30px;
+    padding: 10px;
+}
+.btn{
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+}
+#add{
+    background-color: rgb(94, 209, 94);
+}
+#reset{
+    background-color: rgb(248, 188, 76);
+}
+
+/* table database div */
+table tr th{
+    padding: 10px;
+}

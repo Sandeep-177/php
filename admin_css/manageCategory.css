@@ -1,0 +1,22 @@
+.divFist{
+    border: 2px solid rgb(227, 233, 227);
+    margin: 30px 0;
+}
+.fist{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+#parent1{
+    margin: 20px 85px;
+}
+h3,.pDiv{
+    margin: 20px 0;
+}
+table{
+    width: 100%;
+}
+table tr th{
+    text-align: left;
+    padding: 10px 0 10px 30px;
+}

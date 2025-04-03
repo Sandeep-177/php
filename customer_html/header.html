@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Smart Home<span style="color: brown;">Service</span></div>
+        <nav>
+            <ul>
+                <li><a href="#" class="naviLink" data-target="0">Home</a></li>
+                <li><a href="#" class="naviLink" data-target="1">Services</a></li>
+                <li><a href="#" class="naviLink" data-target="2">Contact</a></li>
+                <li><a href="#" class="naviLink" data-target="3">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <script>
+        let baseUrl = window.location.origin + '/'; // Ensure base URL ends with "/"
+
+        function navigateToPage(index) {
+            let pages = ['index.html', 'customer_html/category.html', 'customer_html/contactUs.html', 'customer_html/feedback.html'];
+
+            if (index >= 0 && index < pages.length) {
+                let targetUrl = baseUrl + pages[index];
+                console.log("Navigating to:", targetUrl);
+                window.location.href = targetUrl;
+            } else {
+                console.error('Invalid path index:', index);
+            }
+        }
+
+        document.querySelectorAll('.naviLink').forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                let pageIndex = parseInt(this.getAttribute('data-target'), 10);
+                navigateToPage(pageIndex);
+            });
+        });
+    </script> -->
+</body>
+</html>

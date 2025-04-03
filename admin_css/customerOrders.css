@@ -1,0 +1,21 @@
+table{
+    border: 1px solid rgb(227, 233, 227);
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+#parent1{
+    margin: 20px 85px;
+}
+h3{
+    margin: 20px 0;
+}
+.pDiv{
+    margin: 20px 0 60px 0;
+}
+.pDiv2{
+    margin: 20px 0;
+}
+th,td{
+    padding: 10px 0 10px 10px;
+}

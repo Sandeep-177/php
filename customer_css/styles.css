@@ -1,0 +1,320 @@
+html{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* General Styles */
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Header */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #f5f1f1;
+    color: black;
+}
+#abou{
+    font-size: 30px;
+    font-weight: 600;
+}
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+    padding: 4rem 2rem;
+    background-image: url("../images/home.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+#pyellow{
+    position: absolute;
+    top: 48%;
+    transform: translateY(-48%);
+    padding: 20px;
+    width: 300px;
+    font-size: 50PX;
+    font-weight: 700;
+    background-color: rgb(218, 195, 94);
+    border-radius: 5px 5px 0 0;
+    height: 130px;
+}
+#pyellow2{
+    position: absolute;
+    top: 48%;
+    transform: translateY(85%);
+    padding: 10px;
+    width: 300px;
+    font-size: 50PX;
+    font-weight: 700;
+    border: none;
+    border-left: 1px solid rgb(218, 195, 94);;
+    border-right: 1px solid rgb(218, 195, 94);
+    border-bottom: 1px solid rgb(218, 195, 94);
+    background-color: transparent;
+    border-radius: 0 0 5px 5px;
+    height: 80px;
+}
+#heroc{
+    background-color: rgb(209, 207, 207);
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    width: 40%;
+    padding: 30px 30px 30px 15%;
+    height: 250px;
+    text-align: justify;
+    gap: 20px;
+    border-radius: 5px;
+}
+#heroc p{
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+}
+
+/* Services Section */
+#services h2{
+    font-size: 50px;
+}
+#services {
+    background: #f5f1f1;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+#services .service-cards {
+    display: flex;
+    gap: 2rem;
+    /* flex-wrap:wrap; */
+}
+
+.card {
+    color: bisque;
+    margin: 20px;
+    border-radius: 8px;
+    width: 350px;
+    height: 250px;
+    text-align: center;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.card h3{
+    font-size: 25px;
+    border-top: 2px solid rgb(48, 39, 39);
+    border-left: 2px solid rgb(32, 26, 26);
+    box-shadow: 10px 10px 10px black,-5px -5px 5px black;
+    margin-top: auto;
+}
+.card h3,p{
+    margin: 5px;
+}
+
+.card button {
+    background: #007BFF;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+.lernm{
+    background: #007BFF;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 10px;
+    width: fit-content;
+    margin-left: 30px;
+}
+#choose{
+    background-color: rgb(118, 137, 143);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#chh2{
+    font-size: 40px;
+}
+.ch2{
+    color: #f5f1f1;
+    font-style: italian;
+}
+.ch1{
+    color: rgb(136, 132, 132);
+    font-style: italian;
+}
+#guy{
+    padding: 0 30%;
+}
+#te{
+    font-weight: 5px;
+    font-size: 20px;
+}
+#prntn1{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+.new1{
+    background: #f5f1f1;
+    padding: 30px;
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: justify;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    background: #f5f1f1;
+    color: black;
+    padding: 1rem 2rem;
+    text-align: center;
+    
+}
+.footful li a{
+    text-decoration: none;
+    color: black;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    margin: 0.5rem;
+}
+
+footer ul img{
+    height: 25px;
+    width: 25px;
+}
+#pyellow2::after{
+    content: " ";
+    animation: typewriter 3s ease-in-out alternate infinite;
+}
+@keyframes typewriter{
+    0%{
+        content: " |";
+    }
+    5%{
+        content: " ";
+    }
+    10%{
+        content: " |";
+    }
+    15%{
+        content: "h|";
+    }
+    20%{
+        content: "he|";
+    }
+    25%{
+        content: "hel|";
+    }
+    30%{
+        content: "help|";
+    }
+    35%{
+        content: "help y|";
+    }
+    40%{
+        content: "help yo|";
+    }
+    45%{
+        content: "help you|";
+    }
+    50%{
+        content: "help you?|";
+    }
+    60%{
+        content: "help you? ";
+    }
+    70%{
+        content: "help you?|";
+    }
+    80%{
+        content: "help you? ";
+    }
+    90%{
+        content: "help you?|";
+    }
+    100%{
+        content: "help you?|";
+    }   }
+
+    .card{
+        position: relative;
+    overflow: hidden;
+    transition: transform 0.6s ease;
+    }
+    .tryi{
+        padding: 5px;
+        position: absolute;
+        bottom: -45px;
+        background-color: rgba(216, 202, 202,0.5);
+        transition: all 0.8s ease;
+    }
+    .tryi h3{
+        display: flex;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+.tryi p,button{
+    visibility: hidden;
+}
+.card:hover{
+        transform: scale(1.1);
+    
+    .tryi{
+        bottom: 0;
+    }
+    .tryi p,button{
+        visibility: visible;
+    }
+}

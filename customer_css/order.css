@@ -1,0 +1,55 @@
+#ord1{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+#ord1 h1{
+    margin-bottom: 10px;
+    font-size: 2em;
+    color: #007BFF;
+}
+#loca{
+    display: flex;
+    gap: 30px;
+}
+#loca input {
+    margin: 20px 0;
+    padding: 10px;
+    gap: 20px;
+}
+#order1{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 30px;
+    box-sizing: content-box;
+    width: 40%;
+}
+#order1 span{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+label {
+    margin-right: 10px;
+}
+
+select{
+    padding: 10px;
+    flex: 1;
+}
+#order1 button{
+    background: #007BFF;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+#para {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    width: 500px;
+    height: fit-content;
+}
