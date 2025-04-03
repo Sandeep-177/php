@@ -31,13 +31,13 @@
             }
     
         // Load Header
-        loadContent('header.html', 'head');
+        loadContent('customer_html/header.html', 'head');
 
         // Load who we are
-        loadContent('whoWeAre.html', 'who');
+        loadContent('customer_html/whoWeAre.html', 'who');
 
         // Load Footer
-        loadContent('footer.html', 'foot');
+        loadContent('customer_html/footer.html', 'foot');
 
         function attachNavEventListeners() {
                 let isGitHub = window.location.hostname.includes("github.io");
