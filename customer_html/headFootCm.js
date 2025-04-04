@@ -45,7 +45,7 @@
 
         function attachNavEventListeners() {
                 let isGitHub = window.location.hostname.includes("github.io");
-                let baseUrl = isGitHub ? "https://sandeep-177.github.io/php/" : window.location.origin + "/";
+                let baseUrl = isGitHub ? "/php/" : window.location.origin + "/";
                 let links= document.querySelectorAll('a');
                 if(links.length>0){
                     console.log(`there is ${links.length} number of links found`);
@@ -53,13 +53,17 @@
                 console.log('links not found');
             }
                 links.forEach(link=>{
-                    link.addEventListener('click',function(event){
-                        event.preventDefault();
-                        // let targetUrl=baseUrl+link.getAttribute("href");
-                        let targetUrl=new URL(link.getAttribute("href"),baseUrl).href;
-                        console.log("Navigating to:", targetUrl);
-                        window.location.href = targetUrl;
-                    })
+                    let href=link.getAttribute("href");
+                    if (!href.startsWith("http") && !href.startsWith(baseUrl)) {
+                        link.setAttribute("href",baseUrl+href);
+                    }
+                    // link.addEventListener('click',function(event){
+                    //     event.preventDefault();
+                    //     // let targetUrl=baseUrl+link.getAttribute("href");
+                    //     let targetUrl=new URL(link.getAttribute("href"),baseUrl).href;
+                    //     console.log("Navigating to:", targetUrl);
+                    //     window.location.href = targetUrl;
+                    // })
                 })
         }
         // function attachNavEventListeners() {
