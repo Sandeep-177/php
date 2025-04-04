@@ -25,7 +25,10 @@
                     }
                     if (filesLoaded === 3) {
                         console.log("✅ All dynamic content loaded!");
-                        attachNavEventListeners(); // ✅ Call function after all files load
+                        document.addEventListener("DOMContentLoaded", updateLinks);
+
+                        // attachNavEventListeners(); 
+                        // ✅ Call function after all files load
                     } 
                     // else {
                     //     console.error(`Element with ID '${elementId}' not found in the DOM!`);
