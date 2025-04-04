@@ -1,8 +1,11 @@
 
         // Auto-detect if running on GitHub or locally
         const isGitHubPages = window.location.hostname.includes("github.io");
-        const projectPath = isGitHubPages ? "./php/" : "./"; // Adjust based on where your files are
-        const BASE_PATH = window.location.origin + projectPath;
+        //const projectPath = isGitHubPages ? "./php/" : "./"; 
+        // Adjust based on where your files are
+        // const BASE_PATH = window.location.origin + projectPath;
+        const BASE_PATH = isGitHubPages ? window.location.origin + "/php/" : window.location.origin + "/";
+
         let filesLoaded = 0;
 
         function loadContent(url, elementId, callback) {
