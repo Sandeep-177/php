@@ -59,8 +59,17 @@
                     let href=link.getAttribute("href");
                     if (!href.startsWith("http") && !href.startsWith(baseUrl)) {
                         link.setAttribute("href",baseUrl+href);
-                    }
-                    let links2=document.querySelectorAll('img');
+                    };
+                    
+                    // link.addEventListener('click',function(event){
+                    //     event.preventDefault();
+                    //     // let targetUrl=baseUrl+link.getAttribute("href");
+                    //     let targetUrl=new URL(link.getAttribute("href"),baseUrl).href;
+                    //     console.log("Navigating to:", targetUrl);
+                    //     window.location.href = targetUrl;
+                    // })
+                });
+                let links2=document.querySelectorAll('img');
                     if(links2.length>0){
                         console.log('img links found');
                     }else{
@@ -70,15 +79,9 @@
                         let src=link.getAttribute("src");
                         if (!src.startsWith("http") && !src.startsWith(baseUrl)) {
                             link2.setAttribute("src",baseUrl+href);
-                        }
-                    // link.addEventListener('click',function(event){
-                    //     event.preventDefault();
-                    //     // let targetUrl=baseUrl+link.getAttribute("href");
-                    //     let targetUrl=new URL(link.getAttribute("href"),baseUrl).href;
-                    //     console.log("Navigating to:", targetUrl);
-                    //     window.location.href = targetUrl;
-                    // })
-                })
+                        };
+                    });
+                        
         }
         // function attachNavEventListeners() {
         //     // let baseUrl = window.location.origin + '/';
