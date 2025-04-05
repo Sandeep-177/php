@@ -78,7 +78,7 @@
                     links2.forEach(link2=>{
                         let src=link2.getAttribute("src");
                         if (!src.startsWith("http") && !src.startsWith(baseUrl)) {
-                            link2.setAttribute("src",baseUrl+href);
+                            link2.setAttribute("src",baseUrl+src);
                         };
                     });
                         
