@@ -76,7 +76,7 @@
                         console.log('img links not found');
                     }
                     links2.forEach(link2=>{
-                        let src=link.getAttribute("src");
+                        let src=link2.getAttribute("src");
                         if (!src.startsWith("http") && !src.startsWith(baseUrl)) {
                             link2.setAttribute("src",baseUrl+href);
                         };
